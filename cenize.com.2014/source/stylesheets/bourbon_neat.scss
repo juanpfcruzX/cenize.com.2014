@@ -1,0 +1,148 @@
+@import "../bourbon/bourbon";
+@import "../neat/neat";
+@import url("https://fonts.googleapis.com/css?family=Open Sans:400,600,700italic,900,400italic,300");
+
+  $green_sage: #008060;
+  $light_green_sage: #3ac490;
+
+  body {
+    font-family: 'Open Sans', 'Source Sans Pro', Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 24px;
+    margin: 0;
+    text-rendering: optimizelegibility;
+  }
+
+  .top_level {
+    text-align: center;
+  }
+
+  h1, h2, h3 {
+    font-weight: 300;
+    margin: 30px 0;
+    padding: 0 0 0 0;
+  }
+
+  h1 { font-size: 52px }
+
+  h2 { font-size: 1.5em }
+  
+  h3 { 
+    font-size: 30px;
+    line-height: 110%;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  header.top {
+    background-color: black;
+    color: white;
+    height: 40px;
+    line-height: 2.3;
+  }
+
+  .logo {
+    @include span-columns(6);
+    float: left;
+    margin: 10px;
+  }
+
+  nav {
+
+    a {
+      color: white;
+      padding: 9px;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    a:hover {
+      background-color: $green_sage;
+    }
+  }
+
+  .container {
+    @include outer-container;
+  }
+
+  .main {
+    background-color: $green_sage;
+    color: white;    
+    header {
+      margin: 30px 0;
+    }
+  }
+
+  .right {
+      float: right;
+  }
+
+  .sage_values {
+    li {
+      line-height: 35px;
+      height: 50px;
+      margin: 10px;
+      font-size: 20px;
+    }
+
+    i {
+      float: left;
+      width: 50px;
+      font-size: 40px;
+      margin-right: 0px;
+    }
+  }
+
+  .informations {
+    @include span-columns(6);
+  }
+
+  .left {
+    float: left;
+  }
+
+  .message {
+    background-color: $light_green_sage;
+    color: white; 
+    
+    padding: 30px 0;
+  }
+
+  .old_price {
+    font-size: 80%;
+    text-decoration: line-through
+  }
+
+  .new_price {
+    color: #247f5c;
+    font-size: 140%;
+    font-weight: 800;
+    vertical-align: baseline;
+  }
+
+  .comprar {
+    
+    float: right;
+
+    small {
+      font-size: 15px;
+      text-align: center;
+      font-weight: normal;
+      line-height: 1;
+      color: #999999;
+      text-decoration: none;
+    }
+  }
+
+  .vigencia {
+    color: #c76f6f;
+    font-size: 14px;
+  }
+
+  .lead {
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 200;
+  }
